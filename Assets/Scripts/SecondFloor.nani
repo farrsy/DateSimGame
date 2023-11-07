@@ -1,0 +1,67 @@
+@back second
+[if chapter2=false]
+@showUI MapIcon,QuestIconUI
+[else]
+@showUI MapIcon
+[endif]
+@char Mary pose:Right
+@set MAIN_QUEST="Main Quest"
+@set Floor=2
+
+[if KateTalkProgress=0||KateTalkProgress=1]
+Mary: You need to talk to Kate, {PlayerName}. She is at third floor.
+@set CURRENT_INFO="-need to talk to Kate"
+@stop
+@endIf
+
+
+[if KateTalkProgress=2&&xPhone=true&&chapter2=false]
+@char Mary pose:Right
+@char Kate pose:Left
+Mary: So, {PlayerName}. You got new xPhone. Give it to me.
+Kate: Oh no,  {PlayerName}. Give it to me.
+@choice "Give phone to Kate" goto:.HappyKate
+@choice "Give phone to Mary" goto:.HappyMary
+@choice "Let it be yours" goto:.SadGirls
+@stop
+
+
+# HappyKate
+@toast "You gave the phone to Kate" 
+Mary: Baka.
+Kate: Thanks a lot, that is so sweet.
+@set KateLove=1
+@choice "That's what I want" goto:.Chapter2
+@stop
+
+# HappyMary
+@toast "You gave the phone to Mary" 
+Kate: Baka.
+Mary: Thanks a lot, that is so sweet.
+@set MaryLove=1
+@choice "That's what I want" goto:.Chapter2
+@stop
+
+# SadGirls
+@toast "You left the phone" 
+Kate: Baka.
+Mary: Baka!
+@choice "That's what I want" goto:.Chapter2
+@stop
+
+# Chapter2
+@set chapter2=true
+@set xPhone=false
+@hide Kate
+@hideUI QuestIconUI
+@stop
+[endif]
+
+[if chapter2=true&&MaryLove=0]
+Mary: You are baka,  {PlayerName}. Anyway, let's move on.
+[elseif chapter2=true&&MaryLove=1]
+
+Mary: You are so sweet,  {PlayerName}. Anyway, let's move on.
+[endif]
+
+@stop

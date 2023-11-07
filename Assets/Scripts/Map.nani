@@ -1,0 +1,10 @@
+@hideAll
+@hideUI MapIcon
+@camera zoom:0 offset:0,0 roll:0 time:0
+
+[if chapter2=false]
+@showUI Map,QuestIconUI
+[else]
+@showUI Map
+[endif]
+@stop

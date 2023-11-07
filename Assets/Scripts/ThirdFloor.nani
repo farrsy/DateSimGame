@@ -1,0 +1,45 @@
+@back third
+
+[if chapter2=false]
+@showUI MapIcon,QuestIconUI
+[else]
+@showUI MapIcon
+[endif]
+
+@if KateTalkProgress=0
+@char Kate pose:Left
+@set Floor=3
+Kate: Oh hi, {PlayerName}
+Kate: You are here to get New xPhone, right? I can help with that. First - you need to hack this laptop to gain the cryptokey.
+@set keyAvailable=true
+@toast "You got the key" 
+@set roofAvailable=true
+
+@loadScene minigameScene
+@wait i
+
+@if globalGameResult=true
+    Kate: Wow! You made it! Now go to the roof and use it. Come back to me after job is done!
+    @set KateTalkProgress=1
+@endif
+
+@endIf
+
+[if KateTalkProgress=1&&xPhone=true]
+    @print text:"I've got a new xPhone. Now it's time to find girls"
+    @set KateTalkProgress=2
+[elseif KateTalkProgress=1&&xPhone=false]
+    @char Kate pose:Left
+    Kate: Go to the roof.
+    @set CURRENT_INFO="- get phone at roof"
+[endif]
+
+[if chapter2=true&&KateLove=0]
+@char Kate pose:Left
+Kate: You are baka,  {PlayerName}. Anyway, let's move on.
+[elseif chapter2=true&&KateLove=1]
+@char Kate pose:Left
+Kate: You are so sweet,  {PlayerName}. Anyway, let's move on.
+[endif]
+
+@stop

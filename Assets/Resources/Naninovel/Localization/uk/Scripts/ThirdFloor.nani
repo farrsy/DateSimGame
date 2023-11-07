@@ -1,0 +1,28 @@
+; English <en> to Ukrainian (Ukraine) <uk-UA> localization document for `ThirdFloor` naninovel script
+
+# e2c7d4da
+; Kate: Oh hi, {PlayerName}
+ Kate: Вітаю, {PlayerName}
+# 5527e933
+; Kate: You are here to get New xPhone, right? I can help with that. First - you need to hack this laptop to gain the cryptokey.
+ Kate: Ти тут за новим xPhone, так? Я можу допогти з цим. Поперше - тобі треба хакнути цей ноут та отримати кріптоключ.
+# b4f91033
+; @toast "You got the key" 
+@toast "Ви отримали ключ" 
+
+# 6155cb80
+;     Kate: Wow! You made it! Now go to the roof and use it. Come back to me after job is done!
+Kate: Нічого собі! Ти впорався! Тепер пора на дах. Повертайся до мене, коли все зробиш!
+# f446df76
+;     @print text:"I've got a new xPhone. Now it's time to find girls"
+@print text:"Я отримав новий xPhone. Час повернутись до дівчат"
+# 4c3af009
+;     Kate: Go to the roof.
+
+# 3b646743
+; Kate: You are baka,  {PlayerName}. Anyway, let's move on.
+ Kate: Ти негідник,  {PlayerName}. Тим не менш, давай рухатись далі.
+
+# 93ef5388
+; Kate: You are so sweet,  {PlayerName}. Anyway, let's move on.
+Kate: Ти такий гарний,  {PlayerName}. Тим не менш, давай рухатись далі.

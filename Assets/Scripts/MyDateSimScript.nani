@@ -1,0 +1,17 @@
+@input PlayerName summary:"Choose your name."
+
+@stop
+
+@back second
+@char Mary pose:Right
+Mary: Hello, {PlayerName}
+Mary: You know, {PlayerName}, I have a quest for you! Go to Third floor and bring me New xPhone.
+Mary: Talk to Kate. She will help.
+@hideChars
+@hidePrinter
+@hideAll
+@showUI Map
+@set secondFloorAvailable=true
+@set thirdFloorAvailable=true
+@save
+@stop

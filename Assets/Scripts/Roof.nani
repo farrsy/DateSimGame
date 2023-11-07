@@ -1,0 +1,10 @@
+@back roof
+@showUI MapIcon,QuestIconUI
+
+@set Floor=4
+You used the key and got the lates xPhone.
+@toast "You got the xPhone"
+@set xPhone=true
+@set roofAvailable=false
+@set CURRENT_INFO="- get phone to a girl"
+@stop

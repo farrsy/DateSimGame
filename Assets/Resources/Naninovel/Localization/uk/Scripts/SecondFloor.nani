@@ -1,0 +1,61 @@
+; English <en> to Ukrainian (Ukraine) <uk-UA> localization document for `SecondFloor` naninovel script
+
+# db4fcc41
+; Mary: You need to talk to Kate, {PlayerName}. She is at third floor.
+Mary: Треба поговорити з Кейт, {PlayerName}. Вона на третьому поверсі.
+# b18d224
+; Mary: So, {PlayerName}. You got new xPhone. Give it to me.
+Mary: Що ж, {PlayerName}. В тебе новий xPhone. Давай його мені.
+# 85d7eca7
+; Kate: Oh no,  {PlayerName}. Give it to me.
+Kate: О ні,  {PlayerName}. Віддай його мені.
+# 71381eb8
+; @choice "Give phone to Kate" goto:.HappyKate
+@choice "Віддати Кейт" goto:.HappyKate
+# bd6f557e
+; @choice "Give phone to Mary" goto:.HappyMary
+@choice "Віллати Марі" goto:.HappyMary
+# 66805f9b
+; @choice "Let it be yours" goto:.SadGirls
+@choice "Залишити в себе" goto:.SadGirls
+# 6fe141d5
+; @toast "You gave the phone to Kate" 
+
+# 37b3a8c0
+; Mary: Baka.
+
+# 5ac270f8
+; Kate: Thanks a lot, that is so sweet.
+
+# 381a4cc9
+; @choice "That's what I want" goto:.Chapter2
+
+# 9e39c761
+; @toast "You gave the phone to Mary" 
+
+# 63ae2e86
+; Kate: Baka.
+
+# bfdc5c6f
+; Mary: Thanks a lot, that is so sweet.
+
+# 381a4cc9
+; @choice "That's what I want" goto:.Chapter2
+
+# d516f6aa
+; @toast "You left the phone" 
+
+# 63ae2e86
+; Kate: Baka.
+
+# f5ebf7e9
+; Mary: Baka!
+
+# 381a4cc9
+; @choice "That's what I want" goto:.Chapter2
+
+# 9f16cbe9
+; Mary: You are baka,  {PlayerName}. Anyway, let's move on.
+
+# 75ad386d
+; Mary: You are so sweet,  {PlayerName}. Anyway, let's move on.

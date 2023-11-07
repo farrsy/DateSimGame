@@ -1,0 +1,14 @@
+; English <en> to Ukrainian (Ukraine) <uk-UA> localization document for `MyDateSimScript` naninovel script
+
+# f4c8a666
+; @input PlayerName summary:"Choose your name."
+@input PlayerName summary:"Виберіть собі нік"
+# b44c0595
+; Mary: Hello, {PlayerName}
+ Mary: Вітаю, {PlayerName}
+# 8a88fb3d
+; Mary: You know, {PlayerName}, I have a quest for you! Go to Third floor and bring me New xPhone.
+Mary: Знаєш, {PlayerName}, в мене є завдання! Сходи на третій поверх та принеси мені новий xPhone.
+# 6d6f2ad1
+; Mary: Talk to Kate. She will help.
+ Mary: Поговори з Кейт. Вона допоможе.
